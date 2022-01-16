@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RewardsHistory1Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="3dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/border_radius"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:padding="15dp">
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_color"
+                android:text="All"
+                android:textAllCaps="false"
+                android:textColor="@color/primaryFillColor"
+                android:textSize="15dp" />
+            <View
+                android:layout_width="30dp"
+                android:layout_height="1dp"/>
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_color"
+                android:text="Daily Check in"
+                android:textAllCaps="false"
+                android:textSize="15dp"
+                android:textColor="@color/primaryFillColor"/>
+            <View
+                android:layout_width="30dp"
+                android:layout_height="1dp"/>
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_color"
+                android:text="Spin and Win"
+                android:textAllCaps="false"
+                android:textSize="15dp"
+                android:textColor="@color/primaryWhiteColor"/>
+
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="339dp"
+    android:layout_height="360dp"
+    android:layout_gravity="center"
+    android:padding="5dp"
+    android:background="@color/primaryWhiteColor"
+    android:orientation="vertical"
+    tools:context=".ScratchWin1Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="106dp"
+            android:layout_height="111dp"
+            android:src="@drawable/facebook_logo"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"/>
+        <TextView
+            android:layout_width="112dp"
+            android:layout_height="29dp"
+            android:text="100 Points"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:textColor="@color/primaryBlackColor"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="26dp"/>
+        <TextView
+            android:layout_width="85dp"
+            android:layout_height="21dp"
+            android:text="You've Won"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:textColor="@color/primaryFillColor"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnok"
+        android:layout_width="159dp"
+        android:layout_height="52dp"
+        android:text="Ok"
+        android:textColor="@color/primaryWhiteColor"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/ok_button"/>
+
+
+</LinearLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".VerificationCodeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="113dp"
+            android:text="Verification Code"
+            android:textColor="@color/primaryBlackColor"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:text="@string/enter_code"
+            android:textColor="@color/primaryFillColor"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:paddingHorizontal="30dp"
+             />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <Button
+                android:layout_width="47dp"
+                android:layout_height="62dp"
+                android:hint="2"
+                android:textSize="23dp"
+                android:textColor="@color/primaryBlackColor"
+                android:background="@drawable/border_color"
+                android:textStyle="bold"
+                android:layout_marginRight="18dp"/>
+            <Button
+                android:layout_width="47dp"
+                android:layout_height="62dp"
+                android:textSize="23dp"
+                android:background="@drawable/border_color"
+                android:textColor="@color/primaryBlackColor"
+                android:hint="5"
+                android:layout_marginRight="18dp"/>
+            <Button
+                android:layout_width="47dp"
+                android:layout_height="62dp"
+                android:textSize="23dp"
+                android:textColor="@color/primaryBlackColor"
+                android:background="@drawable/border_color"
+                android:hint="6"
+                android:layout_marginRight="18dp"/>
+            <Button
+                android:layout_width="47dp"
+                android:layout_height="62dp"
+                android:textSize="23dp"
+                android:textColor="@color/primaryBlackColor"
+                android:background="@drawable/border_color"
+                android:hint="3"
+                android:layout_marginRight="18dp"/>
+            <Button
+                android:layout_width="47dp"
+                android:layout_height="62dp"
+                android:textSize="23dp"
+                android:textColor="@color/primaryBlackColor"
+                android:background="@drawable/border_color"
+                android:hint="5"
+                android:layout_marginRight="18dp"/>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/verifyid"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/custom_button"
+        android:text="Verify"
+        android:textAllCaps="false"
+        android:textColor="@color/primaryWhiteColor"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginLeft="18dp"/>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primaryFillColor"
+            android:text="Didn't receive the code?"
+            android:textSize="16dp"
+            />
+        <View
+            android:layout_width="8dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resend"
+            android:textSize="17dp"
+            android:textColor="@color/primaryRedColor"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
