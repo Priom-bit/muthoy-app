@@ -16,9 +16,9 @@
         android:orientation="vertical">
 
         <ImageView
-            android:layout_width="106dp"
-            android:layout_height="111dp"
-            android:src="@drawable/facebook_logo"
+            android:layout_width="169dp"
+            android:layout_height="160dp"
+            android:src="@drawable/gift_icon"
             android:layout_gravity="center"
             android:layout_marginTop="32dp"/>
         <TextView
@@ -31,14 +31,24 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="26dp"/>
         <TextView
+            android:id="@+id/correctanswerid"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="You answered correctly 7 questions in 10 and earn 100 points"
+            android:text="Correct Answer : 0"
             android:textStyle="bold"
             android:textSize="16dp"
             android:textColor="@color/primaryFillColor"
-            android:paddingHorizontal="35dp"
-            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"/>
+        <TextView
+            android:id="@+id/incorrectAnswersid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wrong Answer : 0"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:textColor="@color/primaryFillColor"
+            android:layout_gravity="center"
             android:layout_marginTop="8dp"/>
 
     </LinearLayout>

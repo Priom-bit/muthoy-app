@@ -1,53 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SpinWinActivity">
+    tools:context=".SpinWinActivity"
+    android:id="@+id/spin_layout">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:orientation="vertical">
-        <View
-            android:layout_width="wrap_content"
-            android:layout_height="3dp"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/border_radius"/>
+
     <TextView
+        android:id="@+id/SpinLeft"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:text="Spin Left : 20"
         android:textSize="15dp"
         android:textColor="@color/primaryFillColor"
-        android:gravity="center"/>
-        
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center">
+        android:gravity="center"
+        android:layout_marginBottom="30dp"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/polygon1"
+                android:layout_above="@id/wheel"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="1dp"/>
+
             <ImageView
                 android:id="@+id/wheel"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/spin_wheel"
-                android:adjustViewBounds="true"
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"
-                android:scaleType="centerInside"/>
-
-        </LinearLayout>
-        <ImageView
-            android:id="@+id/spinBtn"
-            android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/wheel5"
+                />
+        <TextView
+            android:id="@+id/txtv"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/spin_btn"
-            android:adjustViewBounds="true"
-            android:layout_marginStart="50dp"
-            android:layout_marginEnd="50dp"
-            android:layout_marginTop="90dp"
-            android:scaleType="center"/>
+            android:layout_below="@id/wheel"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textSize="30dp"/>
+
+        <Button
+            android:id="@+id/spin_now"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Spin Now"
+            android:textAllCaps="false"
+            android:background="@drawable/ok_button"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:onClick="SpinNow"
+            android:textColor="@color/primaryWhiteColor"
+            />
 
 </LinearLayout>
-</LinearLayout>
+</RelativeLayout>
